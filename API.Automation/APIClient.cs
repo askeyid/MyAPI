@@ -1,4 +1,5 @@
-﻿using RestSharp;
+﻿using API.Automation.Auth;
+using RestSharp;
 
 namespace API.Automation
 {
@@ -8,7 +9,11 @@ namespace API.Automation
 
         public APIClient(string baseUrl)
         {
-            var options = new RestClientOptions(baseUrl);
+            var options = new RestClientOptions(baseUrl)
+            {
+                Authenticator = new APIAuthenticator()
+            };
+
             client = new RestClient(options);
         }
 
