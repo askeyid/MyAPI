@@ -17,8 +17,8 @@ namespace API.Automation.Auth
 
         protected override async ValueTask<Parameter> GetAuthenticationParameter(string accessToken)
         {
-            var token = string.IsNullOrEmpty(Token) ? $"{key} {value}" : Token;
-            return new HeaderParameter(KnownHeaders.Authorization, token);
+            //var token = string.IsNullOrEmpty(Token) ? $"{key} {value}" : Token;
+            return new HeaderParameter(key, value);
         }
     }
 }
