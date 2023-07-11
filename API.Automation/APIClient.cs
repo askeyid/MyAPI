@@ -21,13 +21,14 @@ namespace API.Automation
         {
             var request = new RestRequest(Endpoints.CREATE_USER, Method.Post);
             request.AddBody(payload);
-            return await client.ExecuteAsync<T>(request);
+            var response = await client.PostAsync(request);
+            return response ?? throw new Exception("expected Create User response is not null");
         }
 
         public async Task<RestResponse> DeleteUser(string id)
         {
             var request = new RestRequest(Endpoints.DELETE_USER, Method.Delete);
-            request.AddUrlSegment(id, id);
+            request.AddUrlSegment("id", id);
             return await client.ExecuteAsync(request);
         }
 
@@ -55,7 +56,9 @@ namespace API.Automation
             var request = new RestRequest(Endpoints.UPDATE_USER, Method.Put);
             request.AddUrlSegment("id", id);
             request.AddBody(payload); 
-            return await client.ExecuteAsync<T>(request);
+            //return await client.ExecuteAsync<T>(request);
+            var req = await client.ExecuteAsync<T>(request);
+            return req;
         }
     }
 }
