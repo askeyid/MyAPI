@@ -1,10 +1,5 @@
-﻿using API.Automation.Models.Request;
-using API.Automation.Utility;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MyAPI.Framework.Models.Request;
+using MyAPI.Framework.Utility;
 
 namespace Tests.Context
 {

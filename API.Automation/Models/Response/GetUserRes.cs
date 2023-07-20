@@ -1,4 +1,4 @@
-﻿namespace API.Automation.Models.Response
+﻿namespace MyAPI.Framework.Models.Response
 {
     public class GetUserRes
     {

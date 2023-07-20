@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Tests.Features
+namespace MyAPI.Tests.Features
 {
     using TechTalk.SpecFlow;
     using System;

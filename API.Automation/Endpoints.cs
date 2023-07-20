@@ -1,4 +1,4 @@
-﻿namespace API.Automation
+﻿namespace MyAPI.Framework
 {
     public  class Endpoints
     {

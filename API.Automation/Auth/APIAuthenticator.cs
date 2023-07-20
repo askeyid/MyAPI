@@ -1,7 +1,7 @@
 ﻿using RestSharp;
 using RestSharp.Authenticators;
 
-namespace API.Automation.Auth
+namespace MyAPI.Framework.Auth
 {
     public class APIAuthenticator : AuthenticatorBase
     {

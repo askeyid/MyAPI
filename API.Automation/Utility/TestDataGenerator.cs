@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace API.Automation.Utility
+namespace MyAPI.Framework.Utility
 {
     public class TestDataGenerator
     {

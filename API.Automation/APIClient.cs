@@ -1,7 +1,7 @@
-﻿using API.Automation.Auth;
+﻿using MyAPI.Framework.Auth;
 using RestSharp;
 
-namespace API.Automation
+namespace MyAPI.Framework
 {
     public class APIClient : IAPIClient, IDisposable
     {

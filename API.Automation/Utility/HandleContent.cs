@@ -2,7 +2,7 @@
 using RestSharp;
 using TechTalk.SpecFlow;
 
-namespace API.Automation.Utility
+namespace MyAPI.Framework.Utility
 {
     public class HandleContent
     {
