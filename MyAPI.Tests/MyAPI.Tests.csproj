@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\API.Automation\MyAPI.Framework.csproj" />
+    <ProjectReference Include="..\MyAPI.Framework\MyAPI.Framework.csproj" />
   </ItemGroup>
 
   <ItemGroup>
