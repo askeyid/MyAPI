@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using RestSharp;
+using TechTalk.SpecFlow;
 
 namespace API.Automation.Utility
 {
@@ -39,6 +40,16 @@ namespace API.Automation.Utility
             string path = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory));
             path = string.Format(path + "TestData\\{0}", name);
             return path;
+        }
+
+        public static Dictionary<string, string> ToDictionary(Table table)
+        {
+            var dictionary = new Dictionary<string, string>();
+            foreach (var row in table.Rows)
+            {
+                dictionary.Add(row[0], row[1]);
+            }
+            return dictionary;
         }
     }
 }
