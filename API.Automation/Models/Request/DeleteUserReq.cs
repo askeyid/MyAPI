@@ -2,6 +2,6 @@
 {
     public class DeleteUserReq
     {
-        public string id { get; set; }
+        public string? id { get; set; }
     }
 }

@@ -56,9 +56,7 @@ namespace API.Automation
             var request = new RestRequest(Endpoints.UPDATE_USER, Method.Put);
             request.AddUrlSegment("id", id);
             request.AddBody(payload); 
-            //return await client.ExecuteAsync<T>(request);
-            var req = await client.ExecuteAsync<T>(request);
-            return req;
+            return await client.ExecuteAsync<T>(request);
         }
     }
 }
