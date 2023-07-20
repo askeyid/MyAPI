@@ -1,7 +1,7 @@
-using API.Automation;
-using API.Automation.Models.Request;
-using API.Automation.Models.Response;
-using API.Automation.Utility;
+using MyAPI.Framework;
+using MyAPI.Framework.Models.Request;
+using MyAPI.Framework.Models.Response;
+using MyAPI.Framework.Utility;
 using BoDi;
 using RestSharp;
 using TechTalk.SpecFlow;

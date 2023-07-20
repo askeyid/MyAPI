@@ -1,4 +1,4 @@
-﻿namespace API.Automation.Models.Request
+﻿namespace MyAPI.Framework.Models.Request
 {
     public class DeleteUserReq
     {

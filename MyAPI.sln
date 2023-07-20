@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.Automation", "API.Automation\API.Automation.csproj", "{230CD178-DA93-4D31-86AA-AD416F47B2DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAPI.Framework", "API.Automation\MyAPI.Framework.csproj", "{230CD178-DA93-4D31-86AA-AD416F47B2DC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{7FF03BA6-E715-4EAC-8E28-91BD9275A94F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAPI.Tests", "Tests\MyAPI.Tests.csproj", "{7FF03BA6-E715-4EAC-8E28-91BD9275A94F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

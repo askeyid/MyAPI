@@ -1,6 +1,6 @@
 ﻿using RestSharp;
 
-namespace API.Automation
+namespace MyAPI.Framework
 {
     public interface IAPIClient
     {
