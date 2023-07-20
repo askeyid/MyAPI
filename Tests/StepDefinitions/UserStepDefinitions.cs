@@ -71,7 +71,7 @@ namespace Tests.StepDefinitions
         {
             outputHelper.WriteLine($"Number1: {num1}, number2: {num2}!");
         }
-        
+
         [Given(@"Parse (.*) into number")]
         public void GivenParseIntoNumber(int parsedString)
         {
@@ -112,6 +112,12 @@ namespace Tests.StepDefinitions
         public void WhenPeterDoesSomething(string name)
         {
             unitTestRuntimeProvider.TestIgnore("not implemented");
+        }
+
+        [Then(@"Fail the test")]
+        public void ThenFailTheTest()
+        {
+            Assert.That(2, Is.EqualTo(1));
         }
     }
 
